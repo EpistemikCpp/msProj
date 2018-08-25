@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Tetris - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP11C4.TMP" with contents
+[
+/nologo /o"Debug/Tetris.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\AboutDlg.sbr
+.\Debug\BitmapDialog.sbr
+.\Debug\BitmapPropPage.sbr
+.\Debug\BitmapPropSheet.sbr
+.\Debug\CreditStatic.sbr
+.\Debug\dib256.sbr
+.\Debug\dibpal.sbr
+.\Debug\DigiDisplay.sbr
+.\Debug\DirectSound.sbr
+.\Debug\GameBoard.sbr
+.\Debug\GameOverDlg.sbr
+.\Debug\HelpDlg.sbr
+.\Debug\Language.sbr
+.\Debug\MainDlg.sbr
+.\Debug\MIDI.sbr
+.\Debug\MidiFile.sbr
+.\Debug\MusicPlayer.sbr
+.\Debug\OptionsDlg.sbr
+.\Debug\PiecePreview.sbr
+.\Debug\PropSheetTab.sbr
+.\Debug\RoundBmpButton.sbr
+.\Debug\RoundButton.sbr
+.\Debug\ScoreDlg.sbr
+.\Debug\SplashWnd.sbr
+.\Debug\Tetris.sbr
+.\Debug\TetrisDlg.sbr
+.\Debug\VolumeCtrl.sbr]
+Creating command line "bscmake.exe @C:\WINDOWS\TEMP\RSP11C4.TMP"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CGTetris.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

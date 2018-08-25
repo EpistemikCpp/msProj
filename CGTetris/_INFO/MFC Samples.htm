@@ -1,0 +1,753 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://codeguru.earthweb.com/samples/CGTetris.shtml -->
+<HTML><HEAD><TITLE>MFC Programmer's SourceBook : Samples</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="Zafir Anjum" name=Author>
+<META content="Sample Source Code" name=description>
+<META content="SOURCE CODE SAMPLES MFC" name=keywords>
+<META content="MSHTML 5.50.4611.1300" name=GENERATOR></HEAD>
+<BODY><!-- begin logo and top banner ad table -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD vAlign=top colSpan=3><A target=_top 
+      href="http://www.earthweb.com/"><IMG alt=EarthWeb 
+      src="MFC Samples_files/eweb_banner.gif" border=0> </A></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A href="http://codeguru.earthweb.com/"><IMG 
+      alt=Developer.com src="MFC Samples_files/logo_cobrand.gif" border=0> 
+    </A></TD>
+    <TD><IMG height=1 src="MFC Samples_files/dotclear.gif" width=40> </TD>
+    <TD><!--  Begin Ads dc.downloads.guru.visualc.front //-->
+      <SCRIPT language=JavaScript>
+<!-- Hide from old browsers
+OPERA = (navigator.userAgent.indexOf('Opera') != -1);
+NAV3 = (((navigator.appName.indexOf('Netscape') != -1) && (navigator.appVersion.substring(0,1) == 3) && !OPERA));
+NAV4 = ((navigator.appName.indexOf('Netscape') != -1) && (navigator.appVersion.substring(0,1) == 4));
+NAV6 = ((navigator.appName.indexOf('Netscape') != -1) && (navigator.appVersion.substring(0,1) >= 5));
+IE = ((navigator.userAgent.indexOf('MSIE') != -1) || (navigator.userAgent == ""));
+WEBTV = (navigator.appName.indexOf('WebTV') != -1);
+
+now = new Date();
+random = now.getTime();
+
+// Modify to reflect site specifics
+
+server = "http://ads4.earthweb.com";
+target = "/site=devcom/area=dc.downloads.guru.visualc.front/aamsz=468x60/acc_random=";
+
+if (IE || WEBTV || NAV6){
+   document.write('<IFRAME SRC="' + server + '/hserver' + target + random + '?"');
+   document.write(' NORESIZE SCROLLING=NO HSPACE=0 VSPACE=0 FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0 WIDTH=468 HEIGHT=60></IFRAME>');
+} else if (NAV4){
+ document.write('<SCR' + 'IPT LANGUAGE="JavaScript1.1" SRC=' + server + '/jserver' + target + random + '">');
+ document.write('</SCR' + 'IPT>');
+} else if (OPERA || NAV3){
+   document.write('<A HREF="' + server + '/accipiter/adclick.exe' + target + random + '?">');
+   document.write('<IMG SRC="' + server + '/accipiter/adserver.exe' + target + random + '?"></A>');
+}
+// End Hide -->
+</SCRIPT>
+      <NOSCRIPT><A target=_blank 
+      href="http://ads4.earthweb.com/adclick.exe/site=devcom/area=dc.downloads.guru.visualc.front/aamsz=468x60"><IMG 
+      src="MFC Samples_files/898-1063-1125-1.gif"></A> </NOSCRIPT><!-- dc.downloads.guru.visualc.front End Ads //--></TD></TR></TBODY></TABLE><!-- end logo and top banner ad table --><!-- begin lower outer table -->
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=90 bgColor=#efefef><!--search form -->
+      <FORM name=Search 
+      action=http://search.earthweb.com/search97/search_redir.cgi 
+      method=get><INPUT type=hidden value=Search name=Action> <INPUT type=hidden 
+      value=http://search.earthweb.com/search97/samples/forms/srchdemo.htm 
+      name=SearchPage> <INPUT type=hidden value="Site Index" name=Collection> 
+      <INPUT type=hidden value=codeguru.hts name=ResultTemplate> <INPUT 
+      type=hidden value=view.hts name=ViewTemplate> <INPUT type=hidden 
+      value=TCS-SW name=source> 
+      <TABLE cellSpacing=0 cellPadding=0 border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 cellPadding=5 width=130 border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT face="verdana, helvetica" 
+                  size=1><B>Find:</B></FONT><BR><INPUT size=9 
+name=queryText>&nbsp;<INPUT type=submit value=Go! name=submitbutton> 
+                </TD></TR>
+              <TR>
+                <TD><INPUT type=hidden value=on name=section_on> <SELECT 
+                  size=1 name=section> <OPTION 
+                    value=http://www.developer.com/>Developer.com<OPTION 
+                    value=http://codeguru.developer.com/ selected>VC++ 
+                    code<OPTION value=http://codeguru.developer.com/vb/>VB 
+                    code<OPTION value=http://codeguru.developer.com/java/>Java 
+                    code<OPTION 
+                    value=http://www.developer.com/directories/>Directories<OPTION 
+                    value=http://www.developer.com/downloads/>Downloads<OPTION 
+                    value=http://discussions.earthweb.com>Discussions<OPTION 
+                    value=http://www.developer.com/journal/>Journal<OPTION 
+                    value=http://www.developer.com/news/>News<OPTION 
+                    value=http://www.developer.com/classroom/>Training<OPTION 
+                    value=http://www.developer.com/experts/>Experts<OPTION 
+                    value=http://www.developer.com/calendar/>Calendar<OPTION 
+                    value="THE WEB">TechCrawler</OPTION></SELECT> <BR><BR><A 
+                  target=new 
+                  href="http://www.techcrawler.com/eo.asp?s=TCS-SW"><FONT 
+                  face="verdana, helvetica" color=#000000 size=1>SEARCH 
+                  TECHCRAWLER</FONT></A> <IMG height=2 alt=----- 
+                  src="MFC Samples_files/rule.gif" width=105 
+              vspace=3></FORM></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=5 width=150 border=0>
+              <TBODY>
+              <TR>
+                <TD noWrap><SPAN class=navBarH1>CodeGuru Links</SPAN> 
+                  <BR><SMALL><A 
+                  href="http://codeguru.earthweb.com/vb/index.shtml">Visual 
+                  Basic</A><BR><A 
+                  href="http://codeguru.earthweb.com/index.shtml">Visual 
+                  C++</A><BR>
+                  <HR>
+                  <A 
+                  href="http://codeguru.earthweb.com/bbs/wt/wwwthreads.pl">Discussion 
+                  Boards</A><BR><A 
+                  href="http://codeguru.earthweb.com/bookReviews/index.shtml">Book 
+                  Reviews</A><BR><A 
+                  href="http://www.earthweb.com/earthweb/cda/dlink.newsletters|index-jhtml.72.0.-.0.jhtml">Newsletters 
+                  (subscribe)</A><BR><A 
+                  href="http://codeguru.earthweb.com/newsletters/index.shtml">Newsletters 
+                  (archived)</A><BR></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH1>Guru Columns</SPAN> <BR><SMALL>
+                  <LI><A 
+                  href="http://codeguru.earthweb.com/nothingButNet">Nothing but 
+                  .NET</A><BR>
+                  <LI><A href="http://codeguru.earthweb.com/robbins">Bugs in the 
+                  Machine</A><BR>
+                  <LI><A href="http://codeguru.earthweb.com/dino">The Shell 
+                  Game</A><BR>
+                  <LI><A 
+                  href="http://codeguru.earthweb.com/intoTheIUnknown">Into the 
+                  IUnknown</A><BR>
+                  <LI><A 
+                  href="http://codeguru.earthweb.com/theWorkingClassProgrammer">The 
+                  Working Class Programming</A><BR>
+                  <LI><A 
+                  href="http://codeguru.earthweb.com/Whitechapel">Tempting 
+                  Templates</A><BR>
+                  <LI><A 
+                  href="http://codeguru.earthweb.com/editorials">Programming in 
+                  the Real World</A><BR></SMALL></LI></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH1>Article Sections</SPAN></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH2>ATL COM ActiveX</SPAN> <BR><SMALL><A 
+                  href="http://codeguru.earthweb.com/atl/index.shtml">atl com 
+                  activex</A><BR><A 
+                  href="http://codeguru.earthweb.com/complus/index.shtml">com+</A><BR><A 
+                  href="http://codeguru.earthweb.com/shell/index.shtml">shell 
+                  programming</A><BR><!--
+        <a href="/activex/index.shtml">ATL COM ActiveX</a><br>
+        <a href="/com/index.shtml">COM</a><br>
+        <a href="/shell/index.shtml">Shell Programming</a><br>
+        <a href="/wtl/index.shtml">WTL</a><br>
+    --></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH2>C++</SPAN> <BR><SMALL><A 
+                  href="http://codeguru.earthweb.com/algorithms/index.shtml">algorithms 
+                  &amp; formulas</A><BR><A 
+                  href="http://codeguru.earthweb.com/cpp_mfc/index.shtml">c++ 
+                  &amp; mfc</A><BR><A 
+                  href="http://codeguru.earthweb.com/date_time/index.shtml">date 
+                  &amp; time</A><BR><A 
+                  href="http://codeguru.earthweb.com/string/index.shtml">string</A><BR></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH2>Controls</SPAN> <BR><SMALL><A 
+                  href="http://codeguru.earthweb.com/buttonctrl/index.shtml">button 
+                  control </A><BR><A 
+                  href="http://codeguru.earthweb.com/combobox//index.shtml">combobox 
+                  </A><BR><A 
+                  href="http://codeguru.earthweb.com/editctrl/index.shtml">edit 
+                  control </A><BR><A 
+                  href="http://codeguru.earthweb.com/imagelist/index.shtml">imagelist 
+                  control </A><BR><A 
+                  href="http://codeguru.earthweb.com/listbox/index.shtml">listbox 
+                  control </A><BR><A 
+                  href="http://codeguru.earthweb.com/listview/index.shtml">listview 
+                  control </A><BR><A 
+                  href="http://codeguru.earthweb.com/menu/index.shtml">menu 
+                  </A><BR><A 
+                  href="http://codeguru.earthweb.com/controls/index.shtml">other 
+                  controls </A><BR><A 
+                  href="http://codeguru.earthweb.com/propertysheet/index.shtml">property 
+                  sheet </A><BR><A 
+                  href="http://codeguru.earthweb.com/richedit/index.shtml">rich 
+                  edit control </A><BR><A 
+                  href="http://codeguru.earthweb.com/staticctrl/index.shtml">static 
+                  control </A><BR><A 
+                  href="http://codeguru.earthweb.com/statusbar/index.shtml">status 
+                  bar </A><BR><A 
+                  href="http://codeguru.earthweb.com/toolbar/index.shtml">toolbar 
+                  </A><BR><A 
+                  href="http://codeguru.earthweb.com/treeview/index.shtml">treeview 
+                  control </A><BR></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH2>Data</SPAN> <BR><SMALL><!--
+        <a href="/ado/index.shtml">ado & oledb</a><br>
+        <a href="/odbc/index.shtml">odbc</a><br>
+        <a href="/mfc_database/index.shtml">mfc database classes</a><br>
+        <a href="/office_db/index.shtml">office products</a><br>
+        <a href="/oracle/index.shtml">oracle</a><br>
+        <a href="/serialization/index.shtml">serialization</a><br>
+        <a href="/sqlserver/index.shtml">sql server</a><br>
+    --><A 
+                  href="http://codeguru.earthweb.com/mfc_database/index.shtml">database</A><BR><A 
+                  href="http://codeguru.earthweb.com/data-misc/index.shtml">miscellaneous</A>&nbsp;<IMG 
+                  src="MFC Samples_files/new.gif"><BR></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH2>Frameworks</SPAN> <BR><SMALL><!--
+        <a href="/component_frameworks/index.shtml">component frameworks</a><br>
+        <a href="/printing_frameworks/index.shtml">printing frameworks</a><br>
+        <a href="/ui_frameworks/index.shtml">ui frameworks</a><br>
+    --><A 
+                  href="http://codeguru.earthweb.com/advancedui/index.shtml">ui 
+                  &amp; printing frameworks</A><BR></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH2>Graphics &amp; Multimedia</SPAN> 
+                  <BR><SMALL><A 
+                  href="http://codeguru.earthweb.com/bitmap/index.shtml">bitmaps 
+                  &amp; palettes</A><BR><A 
+                  href="http://codeguru.earthweb.com/directx/index.shtml">directx</A><BR><A 
+                  href="http://codeguru.earthweb.com/gdi/index.shtml">gdi</A><BR><A 
+                  href="http://codeguru.earthweb.com/multimedia/index.shtml">multimedia</A><BR><A 
+                  href="http://codeguru.earthweb.com/opengl/index.shtml">opengl</A><BR></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH2>Internet &amp; Networking</SPAN> 
+                  <BR><SMALL><A 
+                  href="http://codeguru.earthweb.com/ieprogram/index.shtml">ie 
+                  programming</A><BR><A 
+                  href="http://codeguru.earthweb.com/internet/index.shtml">internet 
+                  protocols</A><BR><A 
+                  href="http://codeguru.earthweb.com/isapi/index.shtml">isapi</A><BR><A 
+                  href="http://codeguru.earthweb.com/network/index.shtml">network 
+                  protocols</A><BR></SMALL></TD></TR><!--
+    <tr><td><span class="navBarH2">Security</span></td></tr>
+    <tr><td><small>
+      <a href="/cryptoapi/index.shtml">crypto api</a><br>
+      <a href="/encryption/index.shtml">encryption/decryption</a><br>
+      <br>
+    </small></td></tr>
+    -->
+              <TR>
+                <TD><SPAN class=navBarH2>Visual Studio</SPAN> <BR><SMALL><!--
+        <a href="/addins/index.shtml">add-ins</a><br>
+        <a href="/debugging/index.shtml">debugging</a><br>
+        <a href="/tips/index.shtml">editor tips</a><br>
+        <a href="/macros/index.shtml">macros</a><br>
+    --><A 
+                  href="http://codeguru.earthweb.com/devstudio_macros/index.shtml">add-ins 
+                  &amp; macros</A><BR><A 
+                  href="http://codeguru.earthweb.com/tips/index.shtml">editor 
+                  tips</A><BR></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH2>Windows Programming</SPAN> 
+                  <BR><SMALL><A 
+                  href="http://codeguru.earthweb.com/ce/index.shtml">ce</A><BR><A 
+                  href="http://codeguru.earthweb.com/clipboard/index.shtml">clipboard</A><BR><A 
+                  href="http://codeguru.earthweb.com/dll/index.shtml">dll</A><BR><A 
+                  href="http://codeguru.earthweb.com/files/index.shtml">file 
+                  &amp; folder</A><BR><A 
+                  href="http://codeguru.earthweb.com/help/index.shtml">help 
+                  systems</A><BR><A 
+                  href="http://codeguru.earthweb.com/printing/index.shtml">printing</A><BR><A 
+                  href="http://codeguru.earthweb.com/win32/index.shtml">win32</A><BR><A 
+                  href="http://codeguru.earthweb.com/system/index.shtml">system</A><BR></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH2>Windows &amp; Dialogs</SPAN> 
+                  <BR><SMALL><A 
+                  href="http://codeguru.earthweb.com/console/index.shtml">console</A><BR><A 
+                  href="http://codeguru.earthweb.com/dialog/index.shtml">dialog</A><BR><A 
+                  href="http://codeguru.earthweb.com/docking/index.shtml">docking 
+                  window</A><BR><A 
+                  href="http://codeguru.earthweb.com/doc_view/index.shtml">doc/view</A><BR><A 
+                  href="http://codeguru.earthweb.com/splitter/index.shtml">splitter</A><BR></SMALL></TD></TR>
+              <TR>
+                <TD><SPAN class=navBarH1>Interact</SPAN></TD></TR>
+              <TR>
+                <TD><SMALL><A 
+                  href="http://www.earthweb.com/earthweb/cda/dlink.newsletters|index-jhtml.72.0.-.0.jhtml">Newsletters</A><BR><A 
+                  href="http://codeguru.earthweb.com/Guestbook/guestbook.shtml">Guestbook</A><BR><A 
+                  href="http://codeguru.earthweb.com/cgi/recommend.cgi">Recommend 
+                  Us!</A><BR><A 
+                  href="http://codeguru.earthweb.com/about.shtml">About 
+                  Us</A><BR><BR></SMALL></TD></TR></TBODY></TABLE><!-- CG newsletter --><!--
+    <form action="/cgi-bin/list_vc.cgi" method=post>
+      <table>
+        <tr>
+          <td>
+            <img src="/images/rule.gif" vspace="4" width="105" height="2" ALT="-----">
+            <BR>
+
+            <B><FONT FACE="verdana, helvetica" size=1>Visual C++ by E-mail:</b><br></font>
+
+            <input name='email' value='your e-mail' size="11">
+            <input type='hidden'  name='state' value='Subscribe'>
+          </td>
+
+        </tr>
+      
+        <tr>
+          <td><input type='submit' value='Subscribe'>
+          <br>
+          <FONT FACE="verdana, helvetica" size=1>Get the weekly e-mail highlights on <Br>Visual C++!<br></font>
+          <img src="/images/rule.gif" vspace="4" width="105" height="2" ALT="-----">
+          </td>
+        </tr>
+
+      </table>
+    </form>
+    --><!-- EW Links -->
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD vAlign=top><A href="http://www.supportsource.com/"><IMG 
+                  height=30 src="MFC Samples_files/supportsource_105.gif" 
+                  width=105 vspace=1 border=0></A> <BR></TD></TR>
+              <TR>
+                <TD vAlign=top colSpan=2><A 
+                  href="http://auctions.earthweb.com/"><IMG height=30 
+                  src="MFC Samples_files/ewauctions_105.gif" width=105 vspace=1 
+                  border=0></A><BR><A href="http://www.earthwebdirect.com/"><IMG 
+                  height=30 src="MFC Samples_files/ew_direct_spot.gif" width=105 
+                  vspace=1 border=0></A><BR><A 
+                  href="http://www.earthweb.com/jobs/"><IMG height=30 
+                  src="MFC Samples_files/dice_105.gif" width=105 vspace=1 
+                  border=0></A> <!-- <br><A href="http://www.fatbrain.com/earthweb/home.html?from=UUX592"><img src="/images/fatbrain_1051.gif" width="105" height="30" border=0 vspace=1></A> --></TD></TR></TBODY></TABLE>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD><B><FONT face="verdana, helvetica" size=1>EarthWeb 
+                  Sites:</B></FONT><BR><A 
+                  href="http://www.earthweb.com/dlink.index-jhtml.72.949.-.0.jhtml"><FONT 
+                  face="verdana, helvetica" color=#000000 size=1>IT 
+                  Management</FONT></A><BR><A 
+                  href="http://www.earthweb.com/dlink.index-jhtml.72.951.-.0.jhtml"><FONT 
+                  face="verdana, helvetica" color=#000000 size=1>Networking 
+                  &amp; Telecommunications</FONT></A><BR><A 
+                  href="http://www.dice.com/"><FONT face="verdana, helvetica" 
+                  color=#000000 size=1>IT Jobs</FONT></A><BR><A 
+                  href="http://www.earthweb.com/dlink.index-jhtml.72.950.-.0.jhtml"><FONT 
+                  face="verdana, helvetica" color=#000000 size=1>Software 
+                  Development</FONT></A><BR><A 
+                  href="http://www.earthweb.com/dlink.index-jhtml.72.984.-.0.jhtml"><FONT 
+                  face="verdana, helvetica" color=#000000 size=1>Web 
+                  Development</FONT></A><BR><A 
+                  href="http://www.earthweb.com/dlink.index-jhtml.72.995.-.0.jhtml"><FONT 
+                  face="verdana, helvetica" color=#000000 size=1>Hardware &amp; 
+                  Systems</FONT></A><BR><A 
+                  href="http://www.earthweb.com/dlink.corp|community_and_sigs-jhtml.72.957.-.0.jhtml"><FONT 
+                  face="verdana, helvetica" color=#000000 size=1>Community &amp; 
+                  SIGs</FONT></A><BR></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=105 align=left>
+              <TBODY>
+              <TR>
+                <TD vAlign=top align=left><!-- EW foreign translations -->
+                  <DIV align=center>
+                  <FORM name=linkForm><FONT face=verdana,helvetica color=black 
+                  size=1><B>EarthWeb Worldwide</B></FONT><BR><SELECT 
+                  onchange=makeLinkTo(this); size=1> <OPTION value="" 
+                    selected>Languages</OPTION> <OPTION value="">German</OPTION> 
+                    <OPTION value=http://www.itinfo.de>-ITInfo</OPTION> <OPTION 
+                    value=http://www.developer.com/deutsch/>-Dev.com</OPTION> 
+                    <OPTION 
+                    value=http://codeguru.developer.com/xlate/german/>-Codeguru</OPTION> 
+                    <OPTION value="">Spanish</OPTION> <OPTION 
+                    value=http://www.laearthweb.com>-LA.Earthweb.com</OPTION> 
+                    <OPTION 
+                    value=http://www.developer.com/espanol>-Dev.com</OPTION> 
+                    <OPTION value="">French</OPTION> <OPTION 
+                    value=http://www.developer.com/francais>-Dev.com</OPTION> 
+                    <OPTION 
+                    value=http://codeguru.developer.com/xlate/french/>-Codeguru</OPTION> 
+                    <OPTION value="">Japanese</OPTION> <OPTION 
+                    value=http://ewnn.jcontent.com>-EW Nav</OPTION> <OPTION 
+                    value=http://codeguru.developer.com/xlate/japanese/>-Codeguru</OPTION> 
+                    <OPTION value="">Swedish</OPTION> <OPTION 
+                    value=http://www.se.earthweb.com>-EW Sverige</OPTION> 
+                    <OPTION value="">Korean</OPTION> <OPTION 
+                    value=http://www.codeguru.com/xlate/korean/index.shtml>-Codeguru</OPTION> 
+                    <OPTION value="">Italian</OPTION> <OPTION 
+                    value=http://codeguru.developer.com/xlate/italian/>-Codeguru</OPTION> 
+                    <OPTION value="">Russian</OPTION> <OPTION 
+                    value=http://codeguru.developer.com/xlate/russian/>-Codeguru</OPTION></SELECT></FORM>
+                  <SCRIPT>
+        <!--
+        //Make reference to the selected link
+        function makeLinkTo(s) { window.top.location.href =
+        s.options[s.selectedIndex].value; }
+        //-->
+        </SCRIPT>
+                  </DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!--/navbar>
+
+
+<!-- blank column for spacing -->
+    <TD vAlign=top width=20>&nbsp;&nbsp;&nbsp;</TD><!-- end blank column for spacing --><!-- begin content column -->
+    <TD vAlign=top><!--
+<table cellpadding="0" cellspacing="0">
+<tr>
+--><!-- begin main content column -->
+      <CENTER>
+      <H3><FONT color=#a0a099><!-- Article Title -->The Tetris Clone CGTetris 
+      </FONT></H3></CENTER>
+      <HR>
+      This article was contributed by <A 
+      href="mailto:Joerg.Koenig@rhein-neckar.de">Jörg König</A> 
+      <P></P>
+      <P><U>Environment:</U> VC6 SP2</P>
+      <H2>The Tetris Clone CGTetris</H2>
+      <P><A 
+      href="http://codeguru.earthweb.com/samples/CGTetris.shtml#screen">Screen</A> 
+      <BR><A 
+      href="http://codeguru.earthweb.com/samples/CGTetris.shtml#sound">Sound 
+      &amp; Music</A> <BR><A 
+      href="http://codeguru.earthweb.com/samples/CGTetris.shtml#lang">Multilinguality</A> 
+      <BR><A 
+      href="http://codeguru.earthweb.com/samples/CGTetris.shtml#build">Building 
+      the game</A> <BR><A 
+      href="http://codeguru.earthweb.com/samples/CGTetris.shtml#chg1_1">Changes 
+      in version 1.1</A> <BR><A 
+      href="http://codeguru.earthweb.com/samples/CGTetris.shtml#chg1_2">Changes 
+      in version 1.2</A><BR><A 
+      href="http://codeguru.earthweb.com/samples/CGTetris.shtml#download">Download</A> 
+      <BR></P>
+      <P><IMG height=474 src="MFC Samples_files/CGTetris.gif" width=344 
+      align=right border=0 nosave>This game was born by a wish of my wife, an 
+      ultimate Tetris fan, to play a "nice" Tetris on the PC. Many clones of 
+      Tetris in the net were all not good enough (not nice :-),&nbsp; boring or 
+      simply unplayable ...). Buying such a (comparatively trivial) game was not 
+      an option. So I developed a new clone of this great game. </P>
+      <P>The game includes a lot of code not developed by me. All these "stolen" 
+      codes came from the codeguru's pages, and I think it's alright to use it. 
+      I will not mention all the developers, whose code is inside the game (I 
+      fear I will forget somebody). If you're interested, you might look into 
+      the sources to retrieve this information. Some parts of the "stolen" code 
+      were modified, so please refer to the related original article in the 
+      codeguru's pages rather than extracting it from the game's source! </P>
+      <H3><A name=screen>Screen</A></H3>
+      <P>To have a little bit of fun, your screen settings should support at 
+      least 256 colors. Hi- or true color would be much nicer. </P>
+      <H3><A name=sound>Sound &amp; Music</A></H3>
+      <P><B>CGTetris </B>makes a difference between sound and music. Sounds are 
+      implemented by using wavetable files (*.wav), while music is implemented 
+      by using MIDI files (*.mid) (You can see these files only in the 
+      sourcecode distribution. In the game distribution they are built into the 
+      game.) <BR>You need a soundcard to hear both, sounds and music. 
+      <BR>Furthermore you need an installation of DirectX (at least version 3). 
+      Sounds are played via DirectSound. The advantages of DirectSound over the 
+      win32 API function PlaySound(), are its lower latency and the ability to 
+      mix sounds on the fly. <BR><B>CGTetris</B> does not install DirectX, 
+      because it is already installed on many hosts. If you don't have it right 
+      now, you might download it from <A 
+      href="http://www.microsoft.com/directx/resources/default.asp">microsofts 
+      home page</A>. </P>
+      <H3><A name=lang>Multilinguality</A></H3>
+      <P>In the current version (1.1) <B>CGTetris</B> is able to "speak" 3 
+      languages. The default language is the one of the internet: English. The 
+      game is able to detect which is the current users default language. You 
+      only need a proper language DLL to make the game speak the right language. 
+      <BR>&nbsp; 
+      <TABLE cols=2 width="100%" border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <P><B>Language</B></P></TD>
+          <TD>
+            <P><B>Needed Language DLL</B></P></TD></TR>
+        <TR>
+          <TD>
+            <P>English</P></TD>
+          <TD>
+            <P>none (default)</P></TD></TR>
+        <TR>
+          <TD>
+            <P>German</P></TD>
+          <TD>
+            <P>German.lng</P></TD></TR>
+        <TR>
+          <TD>
+            <P>French&nbsp;(since version 1.1)</P></TD>
+          <TD>
+            <P>French.lng (done by Yann_STEPHAN@hp.com)</P></TD></TR>
+        <TR>
+          <TD>
+            <P>Russian (since version 1.2)</P></TD>
+          <TD>
+            <P>Russian.lng (done by <A 
+            href="mailto:ZakovyrinTY@yungjsc.com">Taras Zakovyrin</A>)</P></TD></TR>
+        <TR>
+          <TD>
+            <P>Chinese (big5) (since version 1.2)</P></TD>
+          <TD>
+            <P>Chinese.lng (done by<A href="mailto:jauming@yahoo.com"> JauMing 
+            Tseng</A>)</P></TD></TR></TBODY></TABLE>
+      <P><FONT size=2>list of currently available languages</FONT> </P>
+      <P>The sources of the language DLLs are inside the source distribution. 
+      The DLLs are inside the setup procedure. </P>
+      <P>If you are interested in creating a language DLL for others than the 
+      supported languages, <A href="mailto:Joerg.Koenig@rhein-neckar.de">please 
+      let me know</A>. </P>
+      <H3><A name=build>Building the game</A></H3>
+      <P>Since the first publication of this game, I've got a lot of messages 
+      from people asking me, why the sources won't compile. Well, you need 
+      service pack 3 for the developer studio (VC++ 5). This SP contains some 
+      bug-fixes the compiler has with STL and templates. </P>
+      <H3><A name=chg1_1>Changes in version 1.1</A></H3>
+      <UL type=disc>
+        <LI>added french DLL (thanks to Yann_STEPHAN@hp.com) 
+        <LI>some minor modifications in handling language DLLs </LI></UL>
+      <H3><A name=chg1_2>Changes in version 1.2</A></H3>
+      <UL type=disc>
+        <LI>added russian and chineses language DLLs 
+        <LI>F1 .. F12 at the "game page" can be used to preselect a level (1 .. 
+        12 respectively) 
+        <LI>You can now place your own MIDI files in the directory where the 
+        game lies. In the options dialog they will be listed with their name 
+        (without path and extension). 
+        <LI>You can now play <B>all</B> the musics in a sequence, instead of 
+        playing one again and again. This includes the builtin musics and the 
+        external musics. </LI></UL>
+      <H3><A name=download>Download</A></H3>
+      <P>Now for the interesting part: the download. If you want to build the 
+      game by yourself (MS-VC++ 6 project), you might select the source code 
+      distribution (a ZIP file). Otherwise you can download the game's setup 
+      procedure. For all you cautious net surfers: The game is checked against 
+      bugs and viruses as good as one can check such things. The setup routine 
+      does not modify your system directories. An uninstall procedure will be 
+      installed, too. The installation routine was built with the publicly 
+      available setup toolkit <A 
+      href="http://www.geocities.com/SiliconValley/Way/8818/p_gksetu.htm">GkSetup 
+      1.60</A> (it took me just 5 minutes to build it!) </P>
+      <P><B>CGTetris</B> is free software. You can redistribute it as long as it 
+      is not sold for profit without the <A 
+      href="mailto:Joerg.Koenig@rhein-neckar.de">authors</A> written consent. 
+      The software does not include any warranty. Any damage (of what kind ever) 
+      resulting from the use of this software, rests entirely to the user. 
+      <TABLE cols=2 width="100%" border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <P><B>Installable Game</B></P></TD>
+          <TD>
+            <P><B>Source Project</B></P></TD></TR>
+        <TR>
+          <TD>
+            <P><A 
+            href="http://codeguru.earthweb.com/samples/CGTetris-1.2.EXE">CGTetris-1.2.exe</A> 
+            760 KB</P></TD>
+          <TD>
+            <P><A 
+            href="http://codeguru.earthweb.com/samples/CGTetris-1.2-src.zip">CGTetris-1.2-src.zip</A> 
+            710 KB</P></TD></TR></TBODY></TABLE><!-- Posted / Update  date (dd month yyyy, eg 24 October 1998) -->
+      <P>Date Posted: 3 May 1999<!-- date here --> <!--comments-->
+      <H3>Comments:</H3>
+      <UL><!--startlist-->
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/19977.shtml">scorpions 
+        bug?</A> - haze (2001/01/23) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/19942.shtml">Tetris</A> 
+        - Erika (2001/01/21) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/19940.shtml">tetris</A> 
+        - the purple haze (2001/01/21) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/19927.shtml">excellent</A> 
+        - sudaman (2001/01/20) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/19582.shtml">...</A> - 
+        ali basar (2001/01/05) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/19579.shtml">Thanks for 
+        the game. Russians rule!</A> - Zhenya Shklyar (devushka) (2001/01/05) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/19495.shtml">ms</A> - 
+        karol cummins (2001/01/03) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/18769.shtml">fatal error 
+        RC1015 cannot open include file 'res\ex11.rc2'</A> - &#54620;&#45224;&#50689; (2000/11/29) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/18655.shtml">http://codeguru.earthweb.com/mfc/comments/18655.shtml</A> 
+        - vodkah (2000/11/23) 
+        <LI><A href="http://codeguru.earthweb.com/mfc/comments/18600.shtml">It's 
+        Great, Thanks</A> - H wylie (2000/11/21) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/18500.shtml">stuff</A> - 
+        Tray (2000/11/18) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/17515.shtml">Thank 
+        you....</A> - &#51221;&#49345;&#47732; (2000/10/14) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/17048.shtml">cool...</A> 
+        - &#51076; &#44221;&#54840; (2000/09/25) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/16007.shtml">Video 
+        driver corrupted</A> - Ken (2000/08/10) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/15426.shtml">executable 
+        file can not build</A> - hyunkyu (2000/05/30) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/14577.shtml">wonderful 
+        !!</A> - &#44608; &#49849;&#54788; (2000/04/28) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/13096.shtml">Thank 
+        you</A> - Anand (2000/03/02) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/12828.shtml">?</A> - 
+        Brandon (2000/02/22) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/12085.shtml">games</A> - 
+        claire (2000/01/30) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/11845.shtml">Re:CG 
+        Tetris</A> - Larry (2000/07/24) 
+        <LI><A href="http://codeguru.earthweb.com/mfc/comments/10963.shtml">How 
+        do you change the blocks from 4 block patterns to 5 block pattersn?</A> 
+        - Deimox (1999/12/14) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/10489.shtml">Multi-languages</A> 
+        - Laurent Girard (1999/11/24) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/10101.shtml">successfully 
+        compile and link,but executable file can not execute!</A> - wind 
+        (1999/11/04) 
+        <LI><A 
+        href="http://codeguru.earthweb.com/mfc/comments/9671.shtml">HELP</A> - 
+        chet (1999/10/09) 
+        <LI><A href="http://codeguru.earthweb.com/mfc/comments/9521.shtml">How 
+        to write game ?</A> - Dinh Phuong (1999/10/02) 
+        <LI><A href="http://codeguru.earthweb.com/mfc/comments/5192.shtml">A 
+        minor bug (and solution)</A> - Wa Kan (1999/05/07) </LI></UL>
+      <P><STRONG><A 
+      href="http://codeguru.earthweb.com/cgi-bin/addpage/addpage.cgi?cfg=addcomment&amp;action=Comment">Add 
+      Comment</A></STRONG> 
+      <P></P></TD>
+    <TD vAlign=top width=20>&nbsp;&nbsp;&nbsp;</TD><!-- end main content column --><!-- begin spots column -->
+    <TD vAlign=top width=88>
+      <P><IMG height=13 alt="Give them a visit" 
+      src="MFC Samples_files/visit2.gif" width=92> <!--  Begin Ads dc.downloads.guru.visualc.front //-->
+      <SCRIPT language=JavaScript>
+<!-- Hide from old browsers
+OPERA = (navigator.userAgent.indexOf('Opera') != -1);
+NAV3 = (((navigator.appName.indexOf('Netscape') != -1) && (navigator.appVersion.substring(0,1) == 3) && !OPERA));
+NAV4 = ((navigator.appName.indexOf('Netscape') != -1) && (navigator.appVersion.substring(0,1) == 4));
+NAV6 = ((navigator.appName.indexOf('Netscape') != -1) && (navigator.appVersion.substring(0,1) >= 5));
+IE = ((navigator.userAgent.indexOf('MSIE') != -1) || (navigator.userAgent == ""));
+WEBTV = (navigator.appName.indexOf('WebTV') != -1);
+
+now = new Date();
+random = now.getTime();
+
+// Modify to reflect site specifics
+
+server = "http://ads4.earthweb.com";
+target = "/site=devcom/area=dc.downloads.guru.visualc.front/aamsz=88x88/acc_random=";
+
+if (IE || WEBTV || NAV6){
+   document.write('<IFRAME SRC="' + server + '/hserver' + target + random + '?"');
+   document.write(' NORESIZE SCROLLING=NO HSPACE=0 VSPACE=0 FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0 WIDTH=88 HEIGHT=88></IFRAME>');
+} else if (NAV4){
+ document.write('<SCR' + 'IPT LANGUAGE="JavaScript1.1" SRC=' + server + '/jserver' + target + random + '">');
+ document.write('</SCR' + 'IPT>');
+} else if (OPERA || NAV3){
+   document.write('<A HREF="' + server + '/accipiter/adclick.exe' + target + random + '?">');
+   document.write('<IMG SRC="' + server + '/accipiter/adserver.exe' + target + random + '?"></A>');
+}
+// End Hide -->
+</SCRIPT>
+      <NOSCRIPT><A target=_blank 
+      href="http://ads4.earthweb.com/adclick.exe/site=devcom/area=dc.downloads.guru.visualc.front/aamsz=88x88"><IMG 
+      src="D:\Downloads\MFC Samples_files\dotclear(1).gif"></A> </NOSCRIPT><!-- dc.downloads.guru.visualc.front End Ads //-->
+      <P><!--codeguru.com marketing column--><FONT face="verdana, helvetica" 
+      size=1><IMG height=8 src="MFC Samples_files/redear.gif" width=8 
+      border=0><A target="resource window" 
+      href="http://knowledgemarket.earthweb.com/default.asp?popup=true">Get the 
+      Answers You Need!</A><BR>Incentive-based, question &amp; answer 
+      Marketplace. The first 5,000 members receive $12 credit! Try it! <A 
+      target="resource window" 
+      href="http://knowledgemarket.earthweb.com/default.asp?popup=true">Knowledge 
+      Market</A>.<BR><IMG height=2 
+      src="D:\Downloads\MFC Samples_files\rule(1).gif" width=88 vspace=12><BR>
+      <P><IMG height=8 src="MFC Samples_files/redear.gif" width=8 border=0> For 
+      tons of Windows technology resources, check out the <A 
+      href="http://www.developer.com/directories/dir_windows.html">Windows 
+      Programming directory</A>.<BR><IMG height=2 
+      src="D:\Downloads\MFC Samples_files\rule(1).gif" width=88 
+      vspace=12><BR><IMG height=8 src="MFC Samples_files/redear.gif" width=8 
+      border=0> Target your Technical searches with <BR><B><A 
+      href="http://www.techcrawler.com/">TechCrawler</A></B><BR><IMG height=2 
+      src="D:\Downloads\MFC Samples_files\rule(1).gif" width=88 vspace=12><BR>
+      <P><!--
+ÇIMG SRC="/images/redear.gif" WIDTH="8" HEIGHT="8" BORDER="0"È
+ÇbÈEvent:Ç/bÈÇBRÈ ÇA HREF="http://certexpo.com"ÈTechnical Certification Expo 2000Ç/AÈ: ÇBRÈ
+Exhibitors, seminars, workshops,exams. May 15 - 17, Las Vegas, NV
+ Get Certified Now.
+ÇBRÈ
+Çimg src="/images/rule.gif" width="88" height="2" vspace="12"ÈÇbrÈ
+-->
+      <P><IMG height=8 src="MFC Samples_files/redear.gif" width=8 border=0> 
+      <B>Sweepstakes:</B><BR>Here's your chance to win <A 
+      href="http://www.earthweb.com/windows2000/win_contest/land.html">Windows 
+      2000 Professional.</A> EarthWeb's sweepstakes runs through July 2. Click 
+      <A 
+      href="http://www.earthweb.com/windows2000/win_contest/land.html">here</A> 
+      to enter. <BR><IMG height=2 
+      src="D:\Downloads\MFC Samples_files\rule(1).gif" width=88 
+      vspace=12><BR></FONT>
+      <P><IMG height=13 alt="Give them a visit" 
+      src="MFC Samples_files/visit2.gif" width=92> <!--  Begin Ads dc.downloads.guru.visualc.front //-->
+      <SCRIPT language=JavaScript>
+<!-- Hide from old browsers
+OPERA = (navigator.userAgent.indexOf('Opera') != -1);
+NAV3 = (((navigator.appName.indexOf('Netscape') != -1) && (navigator.appVersion.substring(0,1) == 3) && !OPERA));
+NAV4 = ((navigator.appName.indexOf('Netscape') != -1) && (navigator.appVersion.substring(0,1) == 4));
+NAV6 = ((navigator.appName.indexOf('Netscape') != -1) && (navigator.appVersion.substring(0,1) >= 5));
+IE = ((navigator.userAgent.indexOf('MSIE') != -1) || (navigator.userAgent == ""));
+WEBTV = (navigator.appName.indexOf('WebTV') != -1);
+
+now = new Date();
+random = now.getTime();
+
+// Modify to reflect site specifics
+
+server = "http://ads4.earthweb.com";
+target = "/site=devcom/area=dc.downloads.guru.visualc.front/aamsz=88x88/acc_random=";
+
+if (IE || WEBTV || NAV6){
+   document.write('<IFRAME SRC="' + server + '/hserver' + target + random + '?"');
+   document.write(' NORESIZE SCROLLING=NO HSPACE=0 VSPACE=0 FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0 WIDTH=88 HEIGHT=88></IFRAME>');
+} else if (NAV4){
+ document.write('<SCR' + 'IPT LANGUAGE="JavaScript1.1" SRC=' + server + '/jserver' + target + random + '">');
+ document.write('</SCR' + 'IPT>');
+} else if (OPERA || NAV3){
+   document.write('<A HREF="' + server + '/accipiter/adclick.exe' + target + random + '?">');
+   document.write('<IMG SRC="' + server + '/accipiter/adserver.exe' + target + random + '?"></A>');
+}
+// End Hide -->
+</SCRIPT>
+      <NOSCRIPT><A target=_blank 
+      href="http://ads4.earthweb.com/adclick.exe/site=devcom/area=dc.downloads.guru.visualc.front/aamsz=88x88"><IMG 
+      src="D:\Downloads\MFC Samples_files\dotclear(1).gif"></A> </NOSCRIPT><!-- dc.downloads.guru.visualc.front End Ads //--></P></TD><!-- end spots column --></TR></TBODY></TABLE><!-- begin footer information -->
+<P>&nbsp;</P>
+<CENTER><FONT size=-1>EarthWeb is a service of internet.com 
+Corporation.<BR>Copyright 2001 internet.com Corp. All Rights Reserved.<BR><A 
+href="http://www.internet.com/help/feedback.html">Feedback</A>, &nbsp; <A 
+href="http://www.itmarketer.com/">Advertising Info</A>, &nbsp; <A 
+href="http://www.internet.com/corporate/legal.html">Legal Notices</A>,&nbsp; <A 
+href="http://www.internet.com/corporate/reprints.html#Licensing">Licensing</A>, 
+<A href="http://www.internet.com/corporate/reprints.html#Reprints">Reprints</A>, 
+&amp; <A 
+href="http://www.internet.com/corporate/reprints.html#Permissions">Permissions</A>, 
+&nbsp; <A 
+href="http://www.internet.com/corporate/privacy/privacypolicy.html">Privacy 
+Policy</A>. <BR><A href="http://www.internet.com/"><IMG height=18 
+alt=http://www.internet.com/ src="MFC Samples_files/internetcom.gif" width=161 
+border=0></A></FONT> </CENTER></BODY></HTML>

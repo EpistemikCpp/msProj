@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: linkedHeap - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP5164.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/linkedHeap.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"D:\My_Docs\Prog\CppProj\MSproj\msHeap\linkedHeap\main.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\msHeap\linkedHeap\linkedheap.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\msHeap\linkedHeap\inst.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP5164.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP5165.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/linkedHeap.pdb" /debug /machine:I386 /out:"Debug/linkedHeap.exe" /pdbtype:sept 
+.\Debug\test.obj
+.\Debug\heap.obj
+.\Debug\main.obj
+.\Debug\linkedheap.obj
+.\Debug\inst.obj
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP5165.TMP"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(19) : error C2065: 'random' : undeclared identifier
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.h(31) : error C2039: 'order' : is not a member of 'heap<class test_class>'
+        d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : see reference to class template instantiation 'linked_heap<class test_class>' being compiled
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.h(68) : error C2555: 'linked_heap<class test_class>::create_new' : overriding virtual function differs from 'heap<class test_class>::create_new' only by return type or calling convention
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(119) : see declaration of 'create_new'
+        d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : see reference to class template instantiation 'linked_heap<class test_class>' being compiled
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.h(69) : error C2555: 'linked_heap<class test_class>::first' : overriding virtual function differs from 'heap<class test_class>::first' only by return type or calling convention
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(122) : see declaration of 'first'
+        d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : see reference to class template instantiation 'linked_heap<class test_class>' being compiled
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : error C2039: 'SMALLER_FIRST' : is not a member of 'linked_heap<class test_class>'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : error C2259: 'linked_heap<class test_class>' : cannot instantiate abstract class due to following members:
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'void __thiscall heap<class test_class>::sift_up(class handle<class test_class> &)' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(113) : see declaration of 'sift_up'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'void __thiscall heap<class test_class>::sift_down(class handle<class test_class> &)' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(116) : see declaration of 'sift_down'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'class handle<class test_class> &__thiscall heap<class test_class>::create_new(const class test_class &)' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(119) : see declaration of 'create_new'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'class handle<class test_class> &__thiscall heap<class test_class>::first(void)' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(122) : see declaration of 'first'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'class handle<class test_class> &__thiscall heap<class test_class>::index(const class handle<class test_class> &) const' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(131) : see declaration of 'index'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : error C2259: 'linked_heap<class test_class>' : cannot instantiate abstract class due to following members:
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'void __thiscall heap<class test_class>::sift_up(class handle<class test_class> &)' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(113) : see declaration of 'sift_up'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'void __thiscall heap<class test_class>::sift_down(class handle<class test_class> &)' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(116) : see declaration of 'sift_down'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'class handle<class test_class> &__thiscall heap<class test_class>::create_new(const class test_class &)' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(119) : see declaration of 'create_new'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'class handle<class test_class> &__thiscall heap<class test_class>::first(void)' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(122) : see declaration of 'first'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(27) : warning C4259: 'class handle<class test_class> &__thiscall heap<class test_class>::index(const class handle<class test_class> &) const' : pure virtual function was not defined
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(131) : see declaration of 'index'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(31) : error C2039: 'handle' : is not a member of 'heap<class test_class>'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(31) : error C2440: 'initializing' : cannot convert from 'class handle<class test_class>' to 'class handle &'
+        A reference that is not to 'const' cannot be bound to a non-lvalue
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(35) : error C2678: binary '*' : no operator defined which takes a left-hand operand of type 'class handle' (or there is no acceptable conversion)
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\main.cpp(36) : error C2664: 'priority_change' : cannot convert parameter 1 from 'class handle' to 'class handle<class test_class> &'
+        A reference that is not to 'const' cannot be bound to a non-lvalue
+linkedheap.cpp
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(6) : error C2039: 'order' : is not a member of 'heap<T>'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(8) : error C2244: 'linked_heap<T>::node::node::node' : unable to resolve function overload
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(10) : error C2954: template definitions cannot nest
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(11) : error C2039: 'handle' : is not a member of 'heap<T>'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(123) : error C2955: 'handle' : use of class template requires template argument list
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(68) : see declaration of 'handle'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(140) : error C2955: 'handle' : use of class template requires template argument list
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(68) : see declaration of 'handle'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(157) : error C2039: 'handle' : is not a member of 'heap<T>'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(179) : error C2039: 'handle' : is not a member of 'heap<T>'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(212) : error C2039: 'handle' : is not a member of 'heap<T>'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(212) : error C2039: 'handle' : is not a member of 'heap<T>'
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.cpp(270) : error C2572: 'print' : redefinition of default parameter : parameter 3
+        d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.h(59) : see declaration of 'print'
+inst.cpp
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.h(31) : error C2039: 'order' : is not a member of 'heap<class test_class>'
+        d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\inst.cpp(11) : see reference to class template instantiation 'linked_heap<class test_class>' being compiled
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.h(68) : error C2555: 'linked_heap<class test_class>::create_new' : overriding virtual function differs from 'heap<class test_class>::create_new' only by return type or calling convention
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(119) : see declaration of 'create_new'
+        d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\inst.cpp(11) : see reference to class template instantiation 'linked_heap<class test_class>' being compiled
+d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\linkedheap.h(69) : error C2555: 'linked_heap<class test_class>::first' : overriding virtual function differs from 'heap<class test_class>::first' only by return type or calling convention
+        d:\my_docs\prog\cppproj\msproj\msheap\heap.h(122) : see declaration of 'first'
+        d:\my_docs\prog\cppproj\msproj\msheap\linkedheap\inst.cpp(11) : see reference to class template instantiation 'linked_heap<class test_class>' being compiled
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+linkedHeap.exe - 25 error(s), 10 warning(s)
+</pre>
+</body>
+</html>

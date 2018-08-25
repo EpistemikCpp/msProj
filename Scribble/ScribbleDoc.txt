@@ -1,0 +1,38 @@
+Summary of CScribbleDoc Member Functions and Variables
+The following table describes the current member variables of class CScribbleDoc and the purpose they will serve in Scribble.
+
+CScribbleDoc Data Members
+
+Member	Description	
+
+m_strokeList	A list of strokes. Each item in the list is an object of class CStroke. The list itself is a C++ class template based on the MFC template class, CTypedPtrArray.	
+
+m_penCur	A CPen object used to do the drawing. Its main attribute is its width. The pen is created when the document is constructed and is used during the creation of new strokes.	
+
+m_nPenWidth	The current width of the lines drawn by the pen. 	
+
+
+The following table describes the member functions.
+
+CScribbleDoc Member Functions
+
+Member	Description	
+
+CScribbleDoc, ~CScribbleDoc	A default constructor and a virtual destructor. AppWizard creates placeholders for these functions. In Scribble, they remain empty.	
+
+DeleteContents	Deletes the contents of a document — the strokes that make up the drawing.	
+
+GetCurrentPen	Retrieves a pointer to the current pen object any time it's needed by the drawing code.	
+
+InitDocument, OnNewDocument, OnOpenDocument	Called when a new document is created or an existing document is opened. The overridden versions of the CDocument member functions OnNewDocument and OnOpenDocument call InitDocument to initialize the new document.	
+
+NewStroke	Creates a new stroke object and adds it to the list of strokes in m_strokeList.	
+
+Serialize	Overrides the Serialize member function of class CDocument. The override specifies how to serialize a list of stroke objects to and from a disk file. AppWizard creates a starter version of this function for you.	
+
+AssertValid	Tests the validity of an object's internal state.	
+
+Dump	Dumps the contents of an object's members for examination during debugging.	
+
+
+You'll add code for most of these member functions later in this lesson. You'll learn more about Serialize under Serializing the Data, later in this lesson. You won't add code to the functions AssertValid and Dump for Scribble.

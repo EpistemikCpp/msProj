@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: referenceTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP91C5.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/referenceTest.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\My_Docs\Prog\CppProj\MSproj\Testing\referenceTest\refMain.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\Testing\referenceTest\refReturn.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\Testing\referenceTest\refTest.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP91C5.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP91C6.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/referenceTest.pdb" /debug /machine:I386 /out:"Debug/referenceTest.exe" /pdbtype:sept 
+.\Debug\refMain.obj
+.\Debug\refReturn.obj
+.\Debug\refTest.obj
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP91C6.TMP"
+<h3>Output Window</h3>
+Compiling...
+refMain.cpp
+refReturn.cpp
+D:\My_Docs\Prog\CppProj\MSproj\Testing\referenceTest\refReturn.cpp(14) : warning C4172: returning address of local variable or temporary
+refTest.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+referenceTest.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

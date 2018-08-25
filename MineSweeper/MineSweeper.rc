@@ -1,0 +1,409 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MineSweeper.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MineSweeper.ico"
+IDI_IcoFaceCool         ICON    DISCARDABLE     "res\\FaceCool.ico"
+IDI_IcoFaceOooo         ICON    DISCARDABLE     "res\\FaceOooo.ico"
+IDI_IcoFaceDead         ICON    DISCARDABLE     "res\\FaceDead.ico"
+IDI_IcoFaceSmile        ICON    DISCARDABLE     "res\\FaceSmile.ico"
+IDI_IcoFacePressed      ICON    DISCARDABLE     "res\\FacePressed.ico"
+IDI_LED_0               ICON    DISCARDABLE     "res\\led_0.ico"
+IDI_LED_1               ICON    DISCARDABLE     "res\\led_1.ico"
+IDI_LED_2               ICON    DISCARDABLE     "res\\led_2.ico"
+IDI_LED_3               ICON    DISCARDABLE     "res\\led_3.ico"
+IDI_LED_4               ICON    DISCARDABLE     "res\\led_4.ico"
+IDI_LED_5               ICON    DISCARDABLE     "res\\led_5.ico"
+IDI_LED_6               ICON    DISCARDABLE     "res\\led_6.ico"
+IDI_LED_7               ICON    DISCARDABLE     "res\\led_7.ico"
+IDI_LED_8               ICON    DISCARDABLE     "res\\led_8.ico"
+IDI_LED_9               ICON    DISCARDABLE     "res\\led_9.ico"
+IDI_Sq_Mine             ICON    DISCARDABLE     "res\\Sq_Mine.ico"
+IDI_Sq_Flag             ICON    DISCARDABLE     "res\\Sq_Flag.ico"
+IDI_Sq_1                ICON    DISCARDABLE     "res\\Sq_1.ico"
+IDI_Sq_2                ICON    DISCARDABLE     "res\\Sq_2.ico"
+IDI_Sq_3                ICON    DISCARDABLE     "res\\Sq_3.ico"
+IDI_Sq_4                ICON    DISCARDABLE     "res\\Sq_4.ico"
+IDI_Sq_5                ICON    DISCARDABLE     "res\\Sq_5.ico"
+IDI_Sq_6                ICON    DISCARDABLE     "res\\Sq_6.ico"
+IDI_Sq_7                ICON    DISCARDABLE     "res\\Sq_7.ico"
+IDI_Sq_8                ICON    DISCARDABLE     "res\\Sq_8.ico"
+IDI_Sq_Question         ICON    DISCARDABLE     "res\\Sq_Question.ico"
+IDI_Sq_Mine_Wrong       ICON    DISCARDABLE     "res\\Sq_Mine_Wrong.ico"
+IDI_Sq_Mine_Red         ICON    DISCARDABLE     "res\\Sq_Mine_Red.ico"
+IDI_IcoFace_Mono        ICON    DISCARDABLE     "res\\IcoFace_Mono.ico"
+IDI_Sq_Mono             ICON    DISCARDABLE     "res\\Sq_Mono.ico"
+IDI_Sq_0                ICON    DISCARDABLE     "res\\Sq_0.ico"
+IDI_Sq_Mine_Wrong_Mono  ICON    DISCARDABLE     "res\\Sq_Mine_Wrong_Mono.ico"
+IDI_Sq_Mine_Red_Mono    ICON    DISCARDABLE     "res\\Sq_Mine_Red_Mono.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Game"
+    BEGIN
+        MENUITEM "&New      F2",                ID_GAME_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Beginner",                   ID_GAME_BEGINNER
+        MENUITEM "&Intermediate ",              ID_GAME_INTERMEDIATE
+        MENUITEM "&Expert",                     ID_GAME_EXPERT
+        MENUITEM "&Custom",                     ID_GAME_CUSTOM
+        MENUITEM SEPARATOR
+        MENUITEM "Marks (?)",                   ID_GAME_MARKS
+        MENUITEM "Color",                       ID_GAME_COLOR
+        MENUITEM "Sound",                       ID_GAME_SOUND
+        MENUITEM SEPARATOR
+        MENUITEM "Best Times ...",              ID_GAME_BEST_TIMES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Contents                      F1", ID_HELP_CONTENT
+        MENUITEM "Index",                       ID_HELP_INDEX
+        MENUITEM "Search For Help On...",       ID_HELP_SEARCH
+        MENUITEM "Using Help",                  ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About MineSweeper...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    VK_F1,          ID_DEFAULT_HELP,        VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_GAME_NEW,            VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MineSweeper"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "MineSweeper Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Recreated by Al Whinery",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,41,41,119,8
+END
+
+IDD_DIALOG_Custom_Mines DIALOG DISCARDABLE  0, 0, 131, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Custom Field"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,18,38,16
+    PUSHBUTTON      "Cancel",IDCANCEL,88,49,36,16
+    LTEXT           "Height:",IDC_STATIC,15,20,25,10,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_Height,45,17,28,14,ES_AUTOHSCROLL
+    LTEXT           "Width:",IDC_STATIC,15,38,25,10,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_Width,45,35,28,14,ES_AUTOHSCROLL
+    LTEXT           "Mines:",IDC_STATIC,15,55,25,10,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_Mines,45,52,28,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_BestScores DIALOG DISCARDABLE  0, 0, 206, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fastest Mine Sweepers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,142,74,26,14
+    PUSHBUTTON      "Reset Scores",ID_ResetScores,27,74,50,14
+    LTEXT           "Beginner:",IDC_STATIC,15,20,49,10,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TimeBeginner,73,18,20,12,ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Intermediate:",IDC_STATIC,15,38,49,10,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TimeIntermediate,73,36,22,12,ES_READONLY | NOT 
+                    WS_BORDER
+    LTEXT           "Expert:",IDC_STATIC,15,55,45,10,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TimeExpert,73,52,23,12,ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT_NameBeginner,133,20,66,12,ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT_NameIntermediate,133,38,66,12,ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT_NameExpert,134,53,65,12,ES_READONLY | NOT 
+                    WS_BORDER
+    LTEXT           "Seconds",IDC_STATIC,95,19,29,8
+    LTEXT           "Seconds",IDC_STATIC,96,37,29,8
+    LTEXT           "Seconds",IDC_STATIC,96,52,29,8
+END
+
+IDD_DIALOG_FastestTime DIALOG DISCARDABLE  0, 0, 99, 118
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,97,34,14
+    EDITTEXT        IDC_EDIT_Name,7,70,85,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Message1,7,7,85,12,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_Message2,7,23,85,12,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_Message3,7,44,85,12,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MineSweeper MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MineSweeper\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MineSweeper.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MineSweeper Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_DIALOG_Custom_Mines, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_DIALOG_BestScores, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_FastestTime, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "MineSweeper"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_CANNOT_PLAY_SOUND   "Can Not Play Sound"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MineSweeper"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Index"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+    ID_DEFAULT_HELP         "Content Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GAME_NEW             "New Game"
+    ID_GAME_BEGINNER        "Beginner -- Squares, 9x9 -- Bombs, 10"
+    ID_GAME_INTERMEDIATE    "Intermediate -- Squares, 16x16 -- Bombs, 40"
+    ID_GAME_EXPERT          "Expert -- Squares, 30x16 -- Bombs, 99"
+    ID_GAME_CUSTOM          "Custom -- Squares, nxn -- Bombs, nn"
+    ID_GAME_MARKS           "Allows ? marks on squares"
+    ID_GAME_COLOR           "Color or Black&White"
+    ID_GAME_SOUND           "Sound or Not"
+    ID_GAME_BEST_TIMES      "Show Best Times"
+    ID_HELP_SEARCH          "Help Search\nSearch for Topic"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MineSweeper.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

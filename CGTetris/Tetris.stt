@@ -1,0 +1,8 @@
+[Directories]
+Target=.\TrueTime
+Intermediates=.\TrueTime
+[Instrumentation]
+Inlines=Yes
+[General]
+BuildModel=1
+Target=Tetris - Win32 Debug

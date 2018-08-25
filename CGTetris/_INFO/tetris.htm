@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0077)http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris.shtml.htm -->
+<HTML><HEAD><TITLE>mfc programmer's sourcebook : samples</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="zafir anjum" name=author>
+<META content="sample source code" name=description>
+<META content="source code samples mfc" name=keywords>
+<META content="MSHTML 5.50.4611.1300" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff background=tetris_files/di2001.jpg 
+tppabs="http://www.codeguru.com/fancyhome/back.gif">
+<H3 align=center><FONT color=#a0a099><!-- article title -->the tetris clone 
+cgtetris </FONT></H3>
+<HR>
+<!-- author and contact details -->
+<P>this article was contributed by <!-- author email --><A 
+href="mailto:joerg.koenig@rhein-neckar.de"><!-- author name -->jörg könig</A> <!-- environment eg nt 4.0 sp3, vc6.0 sp1 --></P>
+<P><U>environment:</U> vc5 <!-- sample image - gif or jpg --></P>
+<H2>the tetris clone cgtetris</H2><A 
+href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris.shtml.htm#screen">
+<P>screen</A> <BR><A 
+href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris.shtml.htm#sound">sound 
+&amp; music</A> <BR><A 
+href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris.shtml.htm#lang">multilinguality</A> 
+<BR><A 
+href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris.shtml.htm#build">building 
+the game</A> <BR><A 
+href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris.shtml.htm#chg1_1">changes 
+in version 1.1</A> <BR><A 
+href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris.shtml.htm#download">download</A> 
+<BR><A 
+href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris.shtml.htm#download"></A>&nbsp;<A 
+href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris.shtml.htm#download"></A> 
+</P>
+<P><IMG height=474 src="tetris_files/cgtetris.gif" width=344 align=right 
+tppabs="http://www.codeguru.com/samples/cgtetris.gif" nosave> this game was born 
+by a wish of my wife, an ultimate tetris fan, to play a "nice" tetris on the pc. 
+many clones of tetris in the net were all not good enough (not nice :-),&nbsp; 
+boring or simply unplayable ...). buying such a (comparatively trivial) game was 
+not an option. so i developed a new clone of this great game. </P>
+<P>the game includes a lot of code not developed by me. all these "stolen" codes 
+came from the codeguru's pages, and i think it's alright to use it. i will not 
+mention all the developers, whose code is inside the game (i fear i will forget 
+somebody). if you're interested, you might look into the sources to retrieve 
+this information. some parts of the "stolen" code were modified, so please refer 
+to the related original article in the codeguru's pages rather than extracting 
+it from the game's source! </P>
+<H3><A name=screen></A>screen</H3>
+<P>to have a little bit of fun, your screen settings should support at least 256 
+colors. hi- or true color would be much nicer. </P>
+<H3><A name=sound></A>sound &amp; music</H3><B>
+<P>cgtetris </B>makes a difference between sound and music. sounds are 
+implemented by using wavetable files (*.wav), while music is implemented by 
+using midi files (*.mid) (you can see these files only in the sourcecode 
+distribution. in the game distribution they are built into the game.) <BR>you 
+need a soundcard to hear both, sounds and music. <BR>furthermore you need an 
+installation of directx (at least version 3). sounds are played via directsound. 
+the advantages of directsound over the win32 api function playsound(), are its 
+lower latency and the ability to mix sounds on the fly. <BR><B>cgtetris</B> does 
+not install directx, because it is already installed on many hosts. if you don't 
+have it right now, you might download it from <A 
+href="http://www.microsoft.com/directx/resources/default.asp" 
+tppabs="http://www.microsoft.com/directx/resources/default.asp">microsofts home 
+page</A>. </P>
+<H3><A name=lang></A>multilinguality</H3>
+<P>in the current version (1.1) <B>cgtetris</B> is able to "speak" 3 languages. 
+the default language is the one of the internet: english. the game is able to 
+detect which is the current users default language. you only need a proper 
+language dll to make the game speak the right language. <BR>&nbsp; </P>
+<TABLE cols=2 width="100%" border=1>
+  <TBODY>
+  <TR>
+    <TD><B>language</B></TD>
+    <TD><B>needed language dll</B></TD></TR>
+  <TR>
+    <TD>english</TD>
+    <TD>none (default)</TD></TR>
+  <TR>
+    <TD>german</TD>
+    <TD>german.lng</TD></TR>
+  <TR>
+    <TD>french&nbsp;&nbsp; (since version 1.1)</TD>
+    <TD>french.lng&nbsp;&nbsp; (done by 
+yann_stephan@hp.com)</TD></TR></TBODY></TABLE><FONT size=-1>
+<P>list of currently available languages</FONT> </P>
+<P>the sources of the language dlls are inside the source distribution. the dlls 
+are inside the setup procedure. </P>
+<P>if you are interested in creating a language dll for others than the 
+supported languages, <A href="mailto:joerg.koenig@rhein-neckar.de">please let me 
+know</A>. </P>
+<H3><A name=build></A>building the game</H3>
+<P>since the first publication of this game, i've got a lot of messages from 
+people asking me, why the sources won't compile. well, you need service pack 3 
+for the developer studio (vc++ 5). this sp contains some bug-fixes the compiler 
+has with stl and templates. </P>
+<H3><A name=chg1_1></A>changes in version 1.1</H3>
+<UL>
+  <LI>added french dll (thanks to yann_stephan@hp.com) 
+  <LI>some minor modifications in handling language dlls </LI></UL>
+<H3><A name=download></A>download</H3>
+<P>now for the interesting part: the download. if you want to build the game by 
+yourself (ms-vc++ 5 project), you might select the source code distribution (a 
+zip file). otherwise you can download the game's setup procedure. for all you 
+cautious net surfers: the game is checked against bugs and viruses as good as 
+one can check such things. the setup routine does not modify your system 
+directories. an uninstall procedure will be installed, too. the installation 
+routine was built with the publicly available setup toolkit <A 
+href="http://www.geocities.com/siliconvalley/way/8818/p_gksetu.htm" 
+tppabs="http://www.geocities.com/siliconvalley/way/8818/p_gksetu.htm">gksetup 
+1.60</A> (it took me just 5 minutes to build it!) </P>
+<P><B>cgtetris</B> is free software. you can redistribute it as long as it is 
+not sold for profit without the <A 
+href="mailto:joerg.koenig@rhein-neckar.de">authors</A> written consent. the 
+software does not include any warranty. any damage (of what kind ever) resulting 
+from the use of this software, rests entirely to the user. </P>
+<TABLE cols=2 width="100%" border=1>
+  <TBODY>
+  <TR>
+    <TD><B>installable game</B></TD>
+    <TD><B>source project</B></TD></TR>
+  <TR>
+    <TD><A 
+      href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris11.exe" 
+      tppabs="http://www.codeguru.com/samples/cgtetris11.exe">cgtetris11.exe</A> 
+      738 kb</TD>
+    <TD><A 
+      href="http://www.csdn.net/dev/Visual%20C++/source%20code/samples/cgtetris11src.zip" 
+      tppabs="http://www.codeguru.com/samples/cgtetris11src.zip">cgtetris11src.zip</A>340 
+      kb</TD></TR></TBODY></TABLE><!-- posted / update  date (dd month yyyy, eg 24 october 1998) -->
+<P>date posted: 17 october 1998<!-- date here --> 
+<!--comments--></P></BODY></HTML>

@@ -1,0 +1,25 @@
+
+ Usage: 'MVCpp_Heap int1 int2 int3 intx ...'
+MVCpp_Heap: 3, 9, 12, 17, 30, 55, 43
+
+First = 0x00791F10   Last = 0x00791CD0
+3(0)   ( this=0x00791F10, l=0x00791EB0, r=0x00791E50, p=0xFDFDFDFD)
+   16(1)   ( this=0x00791EB0, l=0x00791DF0, r=0x00791D90, p=0x00791F10)
+      22(3)   ( this=0x00791DF0, l=0xCDCDCDCD, r=0xCDCDCDCD, p=0x00791EB0)
+         .
+         .
+      30(4)   ( this=0x00791D90, l=0xCDCDCDCD, r=0xCDCDCDCD, p=0x00791EB0)
+         .
+         .
+   12(2)   ( this=0x00791E50, l=0x00791D30, r=0x00791CD0, p=0x00791F10)
+      65(5)   ( this=0x00791D30, l=0xCDCDCDCD, r=0xCDCDCDCD, p=0x00791E50)
+         .
+         .
+      43(6)   ( this=0x00791CD0, l=0xCDCDCDCD, r=0xCDCDCDCD, p=0x00791E50)
+         .
+         .
+-------------
+3(0) 12(2) 16(1) 22(3) 30(4) 43(6) 65(5)
+Press any key to continue
+
+

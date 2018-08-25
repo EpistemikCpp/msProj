@@ -1,0 +1,123 @@
+//Microsoft Developer Studio generated resource script.
+//
+// Translation to chinese(big5) by jauming@yahoo.com
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "../StringRes.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""../StringRes.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GameOver            "遊戲結束"
+    IDS_TxtScore            "分數:"
+    IDS_TxtLines            "行數:"
+    IDS_TxtLevel            "關卡:"
+    IDS_TxtStart            "開始"
+    IDS_TxtStop             "停止"
+    IDS_TxtPause            "暫停"
+    IDS_TxtResume           "回復"
+    IDS_HeaderScore         "分數"
+    IDS_HeaderName          "姓名"
+    IDS_HeaderLevel         "關卡"
+    IDS_TxtSquareWidth      "寬:"
+    IDS_TxtSquareHeight     "高:"
+    IDS_TxtGrid             "格線"
+    IDS_TxtEnableSound      "打開音效"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TxtEnableMusic      "打開音樂"
+    IDS_TxtSoundCardRequired "需要音效卡"
+    IDS_TxtSplashAgain      "再秀一次啟始畫面"
+    IDS_TxtBoard            "面版"
+    IDS_TxtSound            "音效"
+    IDS_TxtExFigureSet      "使用擴充方塊組"
+    IDS_TxtChaikovsky       "柴可夫斯基"
+    IDS_TxtScorpions        "天蠍星"
+    IDS_TxtKalinka          "Kalinka"
+    IDS_License             "這是 free(免費) 軟體|你可以自由流傳|未經作者同意不可販賣圖利|"
+    IDS_Concept             "概念\n|原創 構想,|設計 及 程式化|由 Alexey Pajitnov.|"
+    IDS_Warrantee           "擔保\n|本軟體不包含任何保證,|不論明示或暗示,|使用本軟體所可能導致的損失,|完全由使用者自己承擔.|"
+    IDS_Disclosure          "公開說明\n|在此遊戲中所使用的|大部份的資源|(圖檔, 音效 and 音樂)|是由某處網站拷來的|"
+    IDS_SplashImage         "程式載入(啟始)中畫面\n|Lars Stroschen|www.propeller-island.net4.com/moskau/|"
+    IDS_Credits             "感謝\n|此程式將不存在|如果沒有世界各地'codeguru'們的協助|非常感謝|www.codeguru.com|的管理者|Zafir Anjum|以及本遊戲中|用到您程式碼的所有codeguru們|"
+    IDS_TxtEndGame          "結束遊戲"
+    IDS_TxtSequence         "一首接一首撥放"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TitleGamePage       "遊戲頁"
+    IDS_TitleScorePage      "分數頁"
+    IDS_TitleOptionsPage    "選項頁"
+    IDS_TitleAboutPage      "關於頁"
+    IDS_HelpPageDlg         "說明頁"
+    IDS_HelpPrelude         "遊戲操作說明 |以下的按鍵可以使用|在遊戲頁|來玩遊戲||"
+    IDS_HelpKeys            "RETURN(輸入鍵)   --   開始, 停止, 暫停, 回復|左   --   左移|右   --   右移|上   --    逆時針旋轉|下   --   順時針旋轉|SPACE(空白棒)    --   放下|"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MineSweeper - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/MineSweeper.res" /d "NDEBUG" "C:\My Projects\MineSweeper\MineSweeper.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.ALS\LOCALS~1\Temp\RSP2C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "HtmlHelp" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/MineSweeper.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Projects\MineSweeper\AboutDlg.cpp"
+"C:\My Projects\MineSweeper\BestTimes.cpp"
+"C:\My Projects\MineSweeper\ChildView.cpp"
+"C:\My Projects\MineSweeper\CustomMines.cpp"
+"C:\My Projects\MineSweeper\FastestTime.cpp"
+"C:\My Projects\MineSweeper\MainFrm.cpp"
+"C:\My Projects\MineSweeper\MineSweeper.cpp"
+"C:\My Projects\MineSweeper\Sound.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.ALS\LOCALS~1\Temp\RSP2C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.ALS\LOCALS~1\Temp\RSP2D.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "HtmlHelp" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/MineSweeper.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\My Projects\MineSweeper\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.ALS\LOCALS~1\Temp\RSP2D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.ALS\LOCALS~1\Temp\RSP2E.tmp" with contents
+[
+htmlhelp.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/MineSweeper.pdb" /machine:I386 /out:"Release/MineSweeper.exe" 
+".\Release\AboutDlg.obj"
+".\Release\BestTimes.obj"
+".\Release\ChildView.obj"
+".\Release\CustomMines.obj"
+".\Release\FastestTime.obj"
+".\Release\MainFrm.obj"
+".\Release\MineSweeper.obj"
+".\Release\Sound.obj"
+".\Release\StdAfx.obj"
+".\Release\MineSweeper.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.ALS\LOCALS~1\Temp\RSP2E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AboutDlg.cpp
+BestTimes.cpp
+ChildView.cpp
+CustomMines.cpp
+FastestTime.cpp
+MainFrm.cpp
+MineSweeper.cpp
+Sound.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MineSweeper.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

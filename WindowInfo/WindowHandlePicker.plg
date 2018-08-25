@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WindowHandlePicker - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80c /fo"Release/WindowHandlePicker.res" /d "NDEBUG" /d "_AFXDLL" "D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\WindowHandlePicker.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP1224.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/WindowHandlePicker.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\AboutDlg.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\HandlePickerTitleTip.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\HexaEdit.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\OptionsDlg.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\TaskBarFunctions.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\WindowHandlePicker.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\WindowHandlePickerDlg.cpp"
+"D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\External Libraries Files\Registry.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP1224.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP1225.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/WindowHandlePicker.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\My_Docs\Prog\CppProj\MSproj\WindowInfo\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP1225.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP1226.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/WindowHandlePicker.pdb" /machine:I386 /out:"Release/WindowHandlePicker.exe" 
+.\Release\AboutDlg.obj
+.\Release\HandlePickerTitleTip.obj
+.\Release\HexaEdit.obj
+.\Release\OptionsDlg.obj
+.\Release\StdAfx.obj
+.\Release\TaskBarFunctions.obj
+.\Release\WindowHandlePicker.obj
+.\Release\WindowHandlePickerDlg.obj
+.\Release\Registry.obj
+.\Release\WindowHandlePicker.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP1226.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AboutDlg.cpp
+HandlePickerTitleTip.cpp
+HexaEdit.cpp
+OptionsDlg.cpp
+TaskBarFunctions.cpp
+WindowHandlePicker.cpp
+WindowHandlePickerDlg.cpp
+Registry.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+WindowHandlePicker.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Korean - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/KoreanStringRes.res" /d "NDEBUG" "D:\My_Docs\Prog\CppProj\CGTetris\Korean\KoreanStringRes.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP1263.TMP" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "KOREAN_EXPORTS" /Fp"Release/Korean.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\My_Docs\Prog\CppProj\CGTetris\German\DllMain.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP1263.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP1264.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/Korean.pdb" /machine:I386 /out:"Release/Korean.lng" /implib:"Release/Korean.lib" 
+.\Release\DllMain.obj
+.\Release\KoreanStringRes.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP1264.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+D:\My_Docs\Prog\CppProj\CGTetris\Korean\KoreanStringRes.rc(131) : fatal error RC1015: cannot open include file 'res\ex11.rc2'.
+Error executing rc.exe.
+
+
+
+<h3>Results</h3>
+Korean.lng - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

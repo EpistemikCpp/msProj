@@ -1,0 +1,123 @@
+//Microsoft Developer Studio generated resource script.
+//
+// Translation to russian by Taras Zakovyrin <ZakovyrinTY@yungjsc.com>
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "../StringRes.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""../StringRes.h""\0"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GameOver            "Игра закончена"
+    IDS_TxtScore            "Счет:"
+    IDS_TxtLines            "Линии:"
+    IDS_TxtLevel            "Уровень:"
+    IDS_TxtStart            "Начать"
+    IDS_TxtStop             "Закончить"
+    IDS_TxtPause            "Приостановить"
+    IDS_TxtResume           "Продолжтиь"
+    IDS_HeaderScore         "Счет"
+    IDS_HeaderName          "Имя"
+    IDS_HeaderLevel         "Уровень"
+    IDS_TxtSquareWidth      "Ширина блока:"
+    IDS_TxtSquareHeight     "Высота блока:"
+    IDS_TxtGrid             "Сетка"
+    IDS_TxtEnableSound      "Включить эффекты"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TxtEnableMusic      "Включить музыку"
+    IDS_TxtSoundCardRequired 
+                            "Для того что бы включить звуковые эффекты / музыку нужна звуковая карта."
+    IDS_TxtSplashAgain      "Покажи мне это бесподобное изображение"
+    IDS_TxtBoard            "Доска"
+    IDS_TxtSound            "Эффекты"
+    IDS_TxtExFigureSet      "Использовать расширенный набор фигур."
+    IDS_TxtChaikovsky       "Чайковский"
+    IDS_TxtScorpions        "Scorpions"
+    IDS_TxtKalinka          "Калинка"
+    IDS_License             "Это свободно-распространяемое программное обеспечение.|Вы можете свободно распространять его,|если Вы не продаете его|без согласия разработчиков.|"
+    IDS_Concept             "Идея\n|Оригинальная идея,|проектирование и разработка|Алексея Пажитнова.|"
+    IDS_Warrantee           "Гарантии\n|На это программное обеспечение|не предоставляется никакой гаринтии,|явной или неявной.|Вы используете это программное|обеспечение на свой риск,|ответственность за ущерб (если будет нанесен),|нанесенный этим программным обеспечением,|полностью возлагается на пользователя.|"
+    IDS_Disclosure          "Признание\n|Большинство ресурсов|(изображения, звуки и музыка),|использованных в этой игре,|были украдены из Сети (Internet).|"
+    IDS_SplashImage         "Движущиеся изображения\n|Lars Stroschen|www.propeller-island.net4.com/moskau/|"
+    IDS_Credits             "Авторы\n|Эта программа не существовала бы|без работы программистов-'гуру'|во всем мире.|Огромная благодарность |Zafir Anjum, обеспечивающиму поддрежку|www.codeguru.com|и всем программистам,|чей код использовани в этой игре.|"
+    IDS_TxtEndGame          "Конец игры"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TitleGamePage       "Игра"
+    IDS_TitleScorePage      "Счет"
+    IDS_TitleOptionsPage    "Параметры"
+    IDS_TitleAboutPage      "Об игре"
+    IDS_HelpPageDlg         "Помощь"
+    IDS_HelpPrelude         "Как играть в игру.|Для управления игрой могут|использоваться следующие клавиши.|"
+    IDS_HelpKeys            "RETURN|начать, закончить, приостановить, продолжить||LEFT|передвинуть фигуру влево||RIGHT|передвинуть фигуру вправо||UP|повернуть фигуру по часовой стрелке||DOWN|повернуть фигуру против часовой стрелки||SPACE|положить фигуру|"
+    IDS_TxtSequence         "Одина за другой"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

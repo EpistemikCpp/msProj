@@ -1,0 +1,4 @@
+email al_whinery@yahoo.com
+MineSweeper v1.0 My first attempt at simulating MineSweeper.
+Builds under VC++6.0 Would appreciate any improvements.
+MineSweeper.chm is a copy of Micrsoft's.
